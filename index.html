@@ -1,11 +1,310 @@
 ---
-layout: blog
-title: Blog
+layout: page
+title: Welcome to my page!
 description: >
-  The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll.
-last_modified_at: 2018-08-03
-no_link_title: false 
-no_excerpt: false 
-hide_image: false
-cover: true
+  you reached homepage~
 ---
+
+<!-- 欢迎部分 -->
+<div class="intro-section">
+  <div class="intro-content">
+    <p>Hi👋, I'm Gin.</p>
+    <p>What can I do ?</p>
+  </div>
+  <div class="intro-image">
+    <img src="/assets/img/intro-image.png" alt="Gin">
+  </div>
+</div>
+
+<style>
+  .intro-section {
+    margin-bottom: 4rem;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, var(--bg-color, #fff) 0%, rgba(0, 0, 0, 0.02) 100%);
+    border-left: 4px solid var(--text-color, #333);
+    border-radius: 4px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .intro-content {
+    flex: 0 0 auto;
+  }
+
+  .intro-section p:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color, #333);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+
+  .intro-section p:last-child {
+    font-size: 1.2rem;
+    color: var(--text-color, #333);
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  .intro-image {
+    flex: 0 1 200px;
+    min-height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .intro-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .skill-section {
+    margin-bottom: 4rem;
+  }
+
+  .skill-container {
+    position: relative;
+    margin: 2rem 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .skill-image-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .skill-image-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .skill-image-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .skill-image-wrapper::-webkit-scrollbar-thumb {
+    background: var(--border-color, #ddd);
+    border-radius: 3px;
+  }
+
+  .skill-image-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color, #333);
+  }
+
+  .skill-image {
+    flex-shrink: 0;
+    width: auto;
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+  }
+
+  .skill-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border-color, #ddd);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .dot.active {
+    background: var(--text-color, #333);
+  }
+
+  .skill-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color, #333);
+  }
+
+  .skill-description {
+    font-size: 0.95rem;
+    color: var(--text-muted, #666);
+    margin-bottom: 1rem;
+  }
+
+  .menu-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color, #ddd);
+    text-align: center;
+  }
+
+  .menu-intro {
+    font-size: 1rem;
+    color: var(--text-muted, #666);
+    margin-bottom: 2rem;
+  }
+
+  .menu-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: var(--text-color, #333);
+    font-weight: 500;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+  }
+
+  .menu-link:hover {
+    color: var(--accent-color, #0066cc);
+    border-bottom-color: var(--accent-color, #0066cc);
+  }
+
+  @media (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .intro-image {
+      min-height: 250px;
+    }
+
+    .intro-section p:first-child {
+      font-size: 1.5rem;
+    }
+
+    .intro-section p:last-child {
+      font-size: 1rem;
+    }
+
+    .skill-image {
+      max-width: 100%;
+    }
+
+    .menu-links {
+      gap: 1rem;
+    }
+
+    .menu-link {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- 技能展示 1 -->
+<div class="skill-section">
+  <div class="skill-title">数据分析</div>
+  <div class="skill-description">
+    深入挖掘数据中的价值，统计分析和建模。
+  </div>
+  <div class="skill-container">
+    <div class="skill-image-wrapper" id="skillCarousel1">
+      <img src="/assets/img/skill-data-1.png" alt="数据分析技能展示1" class="skill-image">
+      <img src="/assets/img/skill-data-2.png" alt="数据分析技能展示2" class="skill-image">
+      <img src="/assets/img/skill-data-3.png" alt="数据分析技能展示3" class="skill-image">
+    </div>
+    <div class="skill-dots" id="dots1"></div>
+  </div>
+</div>
+
+<!-- 技能展示 2 -->
+<div class="skill-section">
+  <div class="skill-title">数据可视化</div>
+  <div class="skill-description">
+    将复杂的数据转化为直观的可视化设计，让信息一目了然。
+  </div>
+  <div class="skill-container">
+    <div class="skill-image-wrapper" id="skillCarousel2">
+      <img src="/assets/img/skill-viz-1.png" alt="可视化技能展示1" class="skill-image">
+      <img src="/assets/img/skill-viz-2.png" alt="可视化技能展示2" class="skill-image">
+      <img src="/assets/img/skill-viz-3.png" alt="可视化技能展示3" class="skill-image">
+    </div>
+    <div class="skill-dots" id="dots2"></div>
+  </div>
+</div>
+
+<!-- 技能展示 3 -->
+<div class="skill-section">
+  <div class="skill-title">游戏设计</div>
+  <div class="skill-description">
+    与程序美术对接，实现为科研服务的游戏设计。
+  </div>
+  <div class="skill-container">
+    <div class="skill-image-wrapper" id="skillCarousel3">
+      <img src="/assets/img/skill-game-1.png" alt="游戏设计示意图1" class="skill-image">
+      <img src="/assets/img/skill-game-2.png" alt="游戏设计示意图2" class="skill-image">
+      <img src="/assets/img/skill-game-3.png" alt="游戏设计示意图3" class="skill-image">
+    </div>
+    <div class="skill-dots" id="dots3"></div>
+  </div>
+</div>
+
+<!-- Menu 部分 -->
+<div class="menu-section">
+  <p class="menu-intro">Feel free to explore more in the menu:</p>
+  <div class="menu-links">
+    <a href="/about/" class="menu-link">About</a>
+    <a href="/posts/" class="menu-link">作品集</a>
+    <a href="/cv/" class="menu-link">CV</a>
+  </div>
+</div>
+
+<script>
+  function initCarousel(carouselId, dotsId) {
+    const carousel = document.getElementById(carouselId);
+    const dotsContainer = document.getElementById(dotsId);
+    const images = carousel.querySelectorAll('.skill-image');
+    
+    // 创建导航点
+    images.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.className = 'dot' + (index === 0 ? ' active' : '');
+      dot.addEventListener('click', () => scrollToImage(index));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll('.dot');
+
+    function updateDots() {
+      const scrollLeft = carousel.scrollLeft;
+      const itemWidth = carousel.offsetWidth;
+      const currentIndex = Math.round(scrollLeft / itemWidth);
+      
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    }
+
+    function scrollToImage(index) {
+      const itemWidth = carousel.offsetWidth;
+      carousel.scrollTo({
+        left: itemWidth * index,
+        behavior: 'smooth'
+      });
+    }
+
+    carousel.addEventListener('scroll', updateDots);
+  }
+
+  // 初始化所有轮播
+  initCarousel('skillCarousel1', 'dots1');
+  initCarousel('skillCarousel2', 'dots2');
+  initCarousel('skillCarousel3', 'dots3');
+</script>

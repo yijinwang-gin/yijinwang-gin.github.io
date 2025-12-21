@@ -25,45 +25,37 @@ title:                 王一瑾
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
- 个人主页
+    个人主页
 
 # A shorter description for the sidebar.
 tagline:               Welcome to my page!
 
 # A list of keywords for your blog
-keywords:              [自我介绍，简历，做评级]
+keywords:              数据 | 可视化 | 设计
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/logo001.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                yijinwang
+  email:               miltonzoe101@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
   - title:             About
     url:               /about/
+  - title:             作品集
+    url:               /posts/
+  - title:             CV
+    url:               /cv/
 
-# Add links to the footer.
-# Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
-legal:
-  - title:             LICENSE
-    url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2024. All rights reserved.
@@ -80,8 +72,9 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 # This will use the gem `jekyll-theme-hydejack`, as defined in the sibling `Gemfile`.
-#theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+#上线要uncomment下一行，本地运行uncomment上一行
+#remote_theme: hydecorp/hydejack@v9
 # You can uncomment `theme` above and replace it with `remote_theme` here iff you are using the 
 # `jekyll-remote-theme` plugin (which is the case when using the legacy GitHub Pages pipeline).
 # This will fetch the `v9` branch of the public Hydejack repository on GitHub.
@@ -134,17 +127,17 @@ defaults:
         overlay:       false
 
   # Don't include documents in assets in the sitemap
-  - scope:
-      path:            assets/
-    values:
-      sitemap:         false
+  #- scope:
+   #   path:            assets/
+    #values:
+   #   sitemap:         false
 
   # Don't include licenses in sitemap (feel free to delete)
-  - scope:
-      path:            licenses/
-    values:
-      layout:          plain
-      sitemap:         false
+  #- scope:
+    #  path:            licenses/
+   # values:
+  #    layout:          plain
+  #    sitemap:         false
 
   # # You can use the following to enable comments on all posts.
   # - scope:
@@ -316,7 +309,7 @@ include:
   - _routes.json
   - .well-known
   - LICENSE.md
-
+  - _pages
 
 # Plugins
 # ----------------------------------------------------------------------------------------
@@ -418,6 +411,6 @@ jekyll_compose:
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
-      links:
-        - title: Project Link
-          url: https://example.com
+      #links:
+      #  - title: Project Link
+      #    url: https://example.com
