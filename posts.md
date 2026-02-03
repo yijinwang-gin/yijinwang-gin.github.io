@@ -6,13 +6,12 @@ description: >
 grouped: false
 ---
 
+## [游戏 Demo](/game-demo/)
+
+## [游戏拆解](/game-analysis/)
 
 ## [同人作品](/fanart/)
 
 ## [原创作品](/original/)
 
 ## [公众号推文](/wechat/)
-
-## [游戏拆解](/game-analysis/)
-
-## [游戏 Demo](/game-demo/)
