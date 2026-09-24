@@ -48,12 +48,25 @@ permalink: /game-demo/
 
 <div class="demo-card" markdown="1">
 
+## 命名它（Name It）
+> AI 对话互动｜开发中
+
+一款以心理咨询场景为背景的 AI 对话互动游戏。玩家扮演咨询师，与来访者展开对话，从表达中抽取具有意义的词语，并在可视化的意识场景中剪断词语之间的关联，逐步推进干预与探索。
+
+<p class="tagline">对话进入意识，词语改变关系。</p>
+
+<span class="status-tag">开发中 Demo，暂未上线</span>
+
+</div>
+
+<div class="demo-card" markdown="1">
+
 ## 未知信号源
 > 推理解谜游戏（微信小游戏）
 
 「未知信号源」—— 一款沉浸式跨维度解谜微信小程序。玩家通过操作一台来自异世界的「通讯仪」，窥视被害人「阿里亚斯」的私人设备，协助调查官星河破解一桩谋杀案。
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116322746964044&bvid=BV1t3XkBhEst&cid=37119460430&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116322746964044&bvid=BV1t3XkBhEst&cid=37119460430&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
 
 <span class="status-tag">开发中 Demo，尚未上线</span>
 
@@ -70,7 +83,7 @@ permalink: /game-demo/
 
 <p class="tagline">UNMASK the world. UNMASK yourself.</p>
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115994248943014&bvid=BV1mK6tBWEGR&cid=35748579340&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115994248943014&bvid=BV1mK6tBWEGR&cid=35748579340&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
 
 </div>
 
@@ -78,7 +91,7 @@ permalink: /game-demo/
 
 ## FPS Demo（基于UE）
 
-<video width="100%" controls style="border-radius: 8px;">
+<video width="100%" controls preload="metadata" style="border-radius: 8px;">
   <source src="/assets/demo/FPSdemo_simple.mp4" type="video/mp4">
 </video>
 
