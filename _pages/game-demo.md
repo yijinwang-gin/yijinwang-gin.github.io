@@ -44,6 +44,30 @@ permalink: /game-demo/
   border-radius: 8px;
   margin-top: 1rem;
 }
+.demo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.demo-gallery figure {
+  margin: 0;
+}
+.demo-gallery img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+.demo-gallery figcaption {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+@media (max-width: 640px) {
+  .demo-gallery {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <div class="demo-card" markdown="1">
@@ -54,6 +78,17 @@ permalink: /game-demo/
 一款以心理咨询场景为背景的 AI 对话互动游戏。玩家扮演咨询师，与来访者展开对话，从表达中抽取具有意义的词语，并在可视化的意识场景中剪断词语之间的关联，逐步推进干预与探索。
 
 <p class="tagline">对话进入意识，词语改变关系。</p>
+
+<div class="demo-gallery">
+  <figure>
+    <img src="/assets/demo/name-it-main.png" alt="命名它的咨询对话与词语关联界面" loading="lazy">
+    <figcaption>咨询对话与词语关联</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/demo/name-it-subconscious.png" alt="命名它的潜意识探索场景" loading="lazy">
+    <figcaption>潜意识探索场景</figcaption>
+  </figure>
+</div>
 
 <span class="status-tag">开发中 Demo，暂未上线</span>
 

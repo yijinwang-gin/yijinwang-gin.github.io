@@ -12,7 +12,7 @@ permalink: /wechat/
 
 ## [当书籍成为“处方” |《阅读是一间随身携带的咨询室》](https://mp.weixin.qq.com/s/5atE-VsXG0-z5w3rYOTCRg)
 
-## [公众号新文章：点击阅读](https://mp.weixin.qq.com/s/PwUpD1V5bTUAFcHVuHO2hg)
+## [痛苦只是流经我 |《穿越焦虑和抑郁：10周正念冥想之旅》](https://mp.weixin.qq.com/s/PwUpD1V5bTUAFcHVuHO2hg)
 
 <div style="height: 120px;"></div>
 
