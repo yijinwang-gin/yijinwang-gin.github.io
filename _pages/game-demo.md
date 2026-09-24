@@ -44,6 +44,31 @@ permalink: /game-demo/
   border-radius: 8px;
   margin-top: 1rem;
 }
+.video-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e5e9;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+.video-placeholder button {
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+.video-placeholder a {
+  margin-top: 0.75rem;
+  color: #666;
+  font-size: 0.9rem;
+}
 .demo-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -101,7 +126,10 @@ permalink: /game-demo/
 
 「未知信号源」—— 一款沉浸式跨维度解谜微信小程序。玩家通过操作一台来自异世界的「通讯仪」，窥视被害人「阿里亚斯」的私人设备，协助调查官星河破解一桩谋杀案。
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116322746964044&bvid=BV1t3XkBhEst&cid=37119460430&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+<div class="video-placeholder" data-video-src="//player.bilibili.com/player.html?isOutside=true&aid=116322746964044&bvid=BV1t3XkBhEst&cid=37119460430&p=1&autoplay=0">
+  <button type="button">点击播放演示视频</button>
+  <a href="https://www.bilibili.com/video/BV1t3XkBhEst" target="_blank" rel="noopener">在 B 站打开</a>
+</div>
 
 <span class="status-tag">开发中 Demo，尚未上线</span>
 
@@ -118,9 +146,29 @@ permalink: /game-demo/
 
 <p class="tagline">UNMASK the world. UNMASK yourself.</p>
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115994248943014&bvid=BV1mK6tBWEGR&cid=35748579340&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+<div class="video-placeholder" data-video-src="//player.bilibili.com/player.html?isOutside=true&aid=115994248943014&bvid=BV1mK6tBWEGR&cid=35748579340&p=1&autoplay=0">
+  <button type="button">点击播放演示视频</button>
+  <a href="https://www.bilibili.com/video/BV1mK6tBWEGR" target="_blank" rel="noopener">在 B 站打开</a>
+</div>
 
 </div>
+
+<script>
+document.querySelectorAll('.video-placeholder button').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var placeholder = button.parentElement;
+    var iframe = document.createElement('iframe');
+    iframe.src = placeholder.dataset.videoSrc;
+    iframe.scrolling = 'no';
+    iframe.frameBorder = '0';
+    iframe.allowFullscreen = true;
+    iframe.width = '100%';
+    iframe.height = '500';
+    iframe.title = 'Bilibili 演示视频';
+    placeholder.replaceWith(iframe);
+  });
+});
+</script>
 
 <div class="demo-card" markdown="1">
 
