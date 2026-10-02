@@ -33,6 +33,24 @@ permalink: /game-demo/
   font-weight: 600;
   margin-top: 0.5rem;
 }
+.demo-card .status-tag.online {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+.demo-card .demo-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.demo-card .demo-link:hover {
+  background: #554bd8;
+  color: #fff;
+}
 .demo-card .tagline {
   font-weight: 600;
   color: #6c63ff;
@@ -106,16 +124,26 @@ permalink: /game-demo/
 
 <div class="demo-gallery">
   <figure>
-    <img src="/assets/demo/name-it-main.png" alt="命名它的咨询对话与词语关联界面" loading="lazy">
+    <img src="/assets/demo/name-it-cover.jpeg" alt="命名它的封面" loading="lazy">
+    <figcaption>游戏封面</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/demo/name-it-interaction.png" alt="命名它的咨询对话与词语关联界面" loading="lazy">
     <figcaption>咨询对话与词语关联</figcaption>
   </figure>
   <figure>
-    <img src="/assets/demo/name-it-subconscious.png" alt="命名它的潜意识探索场景" loading="lazy">
-    <figcaption>潜意识探索场景</figcaption>
+    <img src="/assets/demo/name-it-client-selection.png" alt="命名它的客户选择界面" loading="lazy">
+    <figcaption>客户选择</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/demo/name-it-opening.png" alt="命名它的开场界面" loading="lazy">
+    <figcaption>游戏开场</figcaption>
   </figure>
 </div>
 
-<span class="status-tag">开发中 Demo，暂未上线</span>
+<a class="demo-link" href="https://www.tuantuanxin.xyz" target="_blank" rel="noopener">立即体验「命名它」</a>
+
+<span class="status-tag online">已上线</span>
 
 </div>
 
@@ -126,12 +154,14 @@ permalink: /game-demo/
 
 「未知信号源」—— 一款沉浸式跨维度解谜微信小程序。玩家通过操作一台来自异世界的「通讯仪」，窥视被害人「阿里亚斯」的私人设备，协助调查官星河破解一桩谋杀案。
 
+<a class="demo-link" href="https://gingerginny.github.io/unknown-signal/" target="_blank" rel="noopener">立即体验「未知信号源」</a>
+
 <div class="video-placeholder" data-video-src="//player.bilibili.com/player.html?isOutside=true&aid=116322746964044&bvid=BV1t3XkBhEst&cid=37119460430&p=1&autoplay=0">
   <button type="button">点击播放演示视频</button>
   <a href="https://www.bilibili.com/video/BV1t3XkBhEst" target="_blank" rel="noopener">在 B 站打开</a>
 </div>
 
-<span class="status-tag">开发中 Demo，尚未上线</span>
+<span class="status-tag online">已上线</span>
 
 </div>
 
