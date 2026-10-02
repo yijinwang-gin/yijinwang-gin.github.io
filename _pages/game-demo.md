@@ -96,6 +96,12 @@ permalink: /game-demo/
 .demo-gallery figure {
   margin: 0;
 }
+.name-it-gallery .cover {
+  grid-column: 1 / -1;
+}
+.name-it-gallery .opening {
+  grid-column: 1 / -1;
+}
 .demo-gallery img {
   display: block;
   width: 100%;
@@ -122,8 +128,8 @@ permalink: /game-demo/
 
 <p class="tagline">对话进入意识，词语改变关系。</p>
 
-<div class="demo-gallery">
-  <figure>
+<div class="demo-gallery name-it-gallery">
+  <figure class="cover">
     <img src="/assets/demo/name-it-cover.jpeg" alt="命名它的封面" loading="lazy">
     <figcaption>游戏封面</figcaption>
   </figure>
@@ -135,7 +141,7 @@ permalink: /game-demo/
     <img src="/assets/demo/name-it-client-selection.png" alt="命名它的客户选择界面" loading="lazy">
     <figcaption>客户选择</figcaption>
   </figure>
-  <figure>
+  <figure class="opening">
     <img src="/assets/demo/name-it-opening.png" alt="命名它的开场界面" loading="lazy">
     <figcaption>游戏开场</figcaption>
   </figure>
