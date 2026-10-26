@@ -102,6 +102,9 @@ permalink: /game-demo/
 .name-it-gallery .opening {
   grid-column: 1 / -1;
 }
+.witch-gallery .cover {
+  grid-column: 1 / -1;
+}
 .demo-gallery img {
   display: block;
   width: 100%;
@@ -118,6 +121,32 @@ permalink: /game-demo/
   }
 }
 </style>
+
+<div class="demo-card" markdown="1">
+
+## 女巫药铺
+> TapTap 聚光灯 GameJam｜模拟经营类
+
+社畜被开除后被迫成为女巫，以炼金制药为核心交互，通过每一次制药决策介入角色命运。
+
+<div class="demo-gallery witch-gallery">
+  <figure class="cover">
+    <img src="/assets/demo/witch1.png" alt="女巫药铺游戏封面" loading="lazy">
+    <figcaption>游戏封面</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/demo/witch2.png" alt="女巫药铺炼金检定界面" loading="lazy">
+    <figcaption>炼金检定</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/demo/witch3.png" alt="女巫药铺角色委托与制药界面" loading="lazy">
+    <figcaption>角色委托与制药决策</figcaption>
+  </figure>
+</div>
+
+<a class="demo-link" href="https://www.taptap.cn/app/974387?os=pc" target="_blank" rel="noopener">前往 TapTap 查看《女巫药铺》</a>
+
+</div>
 
 <div class="demo-card" markdown="1">
 
